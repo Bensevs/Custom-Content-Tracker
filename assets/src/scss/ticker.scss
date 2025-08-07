@@ -1,0 +1,61 @@
+
+.cct {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cct__title {
+    margin-right: 15px;
+    flex-shrink: 0; // Prevent title from shrinking
+}
+
+.cct__slider {
+    flex-grow: 1;
+    min-width: 0; // Flexbox fix for sliders
+}
+
+.cct__item {
+    display: flex !important; // Override slick's default
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.cct__item-img {
+    max-width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cct__item-title {
+    // Typography and color are handled by Elementor controls
+}
+
+.cct__item-desc {
+    margin-left: 8px;
+    // Color is handled by Elementor controls
+}
+
+// --- Arrow Styling ---
+// Basic styles for slick arrows to be visible. Color is controlled by Elementor.
+.slick-arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 5px;
+    z-index: 1;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.slick-prev {
+    margin-right: 5px;
+}
+
+.slick-next {
+    margin-left: 5px;
+}

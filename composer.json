@@ -1,0 +1,9 @@
+{
+    "name": "hemin/custom-content-ticker",
+    "description": "Custom Content Ticker for Elementor",
+    "autoload": {
+        "psr-4": {
+            "CustomContentTicker\\": "src/"
+        }
+    }
+}
